@@ -12,6 +12,7 @@ resource "google_compute_instance" "wordpress"{
         }
     }
 
+    #TODO: automatically create the network if it does not exist
     network_interface{
         network = "wordpress"
         access_config{
